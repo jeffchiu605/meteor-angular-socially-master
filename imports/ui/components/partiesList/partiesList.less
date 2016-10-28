@@ -1,0 +1,23 @@
+parties-list {
+  > div:first-child {
+    height: calc(~"100vh - 64px");
+  }
+
+  [ui-sref] {
+    cursor: pointer;
+  }
+
+  .list-web {
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  .list-mobile > .card:first-child {
+    margin-top: 0;
+  }
+}
+
+@import "../partiesMap/partiesMap.less";
+@import "../partyRemove/partyRemove.less";
+@import "../partyAddButton/partyAddButton.less";
+@import "../partyRsvpsList/partyRsvpsList.less";
